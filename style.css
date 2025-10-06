@@ -18,11 +18,13 @@ Colorpallette:
 :root{
 --standardfont: 25px;
 --hover: 26px;
---title: 28px;
---titlehover: 29px;
+--title: 29px;
+--titlehover: 30px;
 --h2: 35px;
   --paddingtop: 40px;
   --paddingbottom: 20px;
+  --border: 5px solid #d4bebe;
+    --borderradius: 20px;
 }
 * {
   margin: 0;
@@ -101,8 +103,9 @@ h2{
 .sidebar {
   flex: 1;
   padding: 15px;
-  border-radius: 8px;
-  max-width: 250px;
+  border: var(--border);
+  border-radius: var(--borderradius);
+  max-width: 260px;
   min-height: 600px;
   background-color: whitesmoke;
   text-align: center;

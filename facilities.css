@@ -2,11 +2,13 @@
 :root {
   --standardfont: 25px;
   --hover: 26px;
-  --title: 28px;
-  --titlehover: 29px;
+  --title: 29px;
+  --titlehover: 30px;
   --h2: 35px;
   --paddingtop: 40px;
   --paddingbottom: 20px;
+  --border: 5px solid #d4bebe;
+  --borderradius: 20px;
 }
 
 * {
@@ -76,7 +78,7 @@ a*/
 #D4BEBE pale dogwood */
 
 h2 {
-padding-top: var(--paddingtop);
+  padding-top: var(--paddingtop);
   padding-bottom: var(--paddingbottom);
   text-align: center;
   font-family: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -96,8 +98,8 @@ h3 {
   margin-left: 300px;
   padding: 20px;
   width: 900px;
-  border: 5px solid #d4bebe;
-  border-radius: 20px;
+  border: var(--border);
+  border-radius: var(--borderradius);
   background-color: #d5cfe1;
 }
 
@@ -139,7 +141,9 @@ p {
   font-size: var(--hover);
   transition: 0, 3s;
 }
-
+.span-info {
+  display: block;
+}
 @font-face {
   font-family: Lorinda shadow;
   src: url(./Fonts/LondrinaShadow-Regular.ttf);
