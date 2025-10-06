@@ -104,7 +104,6 @@ padding-bottom: var(--paddingbottom);
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
     border: var(--border);
     border-radius: var(--borderradius);
 }
