@@ -42,3 +42,67 @@ header {
 	display: inline;
 	padding: 20px;
 }
+
+/* 
+main
+h2
+div .facility-content
+fig img figcap *5
+p
+a*/
+/* Colorpallette:
+#A09ABC Cool gray
+#B6A6CA lilac
+#D5CFE1 Lavender(Web)
+#E1DEE9 Lavender(web)lighter
+#D4BEBE pale dogwood */
+
+h2{
+    text-align: center;
+    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+}
+h3{
+    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+.facility-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 300px;
+    padding: 20px;
+    width: 900px;
+    border: 5px solid #D4BEBE;
+    border-radius: 20px;
+}
+
+figure{
+    display: flex;
+    flex-direction: row;
+
+}
+
+figcaption{
+    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    align-self: center
+    }
+p{
+    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+@font-face {
+	font-family: Lorinda shadow;
+	src: url(./Fonts/LondrinaShadow-Regular.ttf);
+}
+
+@font-face {
+	font-family: Zain;
+	src: url(./Fonts/Zain-Regular.ttf);
+}
+@font-face {
+	font-family: Outfit;
+	src: url(../Fonts/static/Outfit-Regular.ttf);
+}
