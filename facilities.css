@@ -1,48 +1,66 @@
+/* general styling throughout all sections */
+:root {
+  --standardfont: 25px;
+  --hover: 26px;
+  --title: 28px;
+  --titlehover: 29px;
+  --h2: 35px;
+  --paddingtop: 40px;
+  --paddingbottom: 20px;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #E1DEE9
+  background-color: #e1dee9;
 }
 
 header {
-	background-color: #B6A6CA; 
-	height: 150px;
-	font-family: Lorinda Shadow, Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 40px;
-	text-align: center;
+  background-color: #b6a6ca;
+  height: 150px;
+  font-family: Lorinda Shadow, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
 }
-
-.nav-bar{
-	height: 45px;
-	background-color: #A09ABC;
-	width: 100%; 
-	font-size: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	font-family: Outfit, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.title-link {
+  text-decoration: none;
+  color: #000000;
+}
+.nav-bar {
+  height: 45px;
+  background-color: #a09abc;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Outfit, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .navbar__link {
-	display: flex;
-	align-items: center;
-	background-color: #A09ABC;
-	color: #000000;
-	text-decoration: none;
-
+  display: flex;
+  align-items: center;
+  background-color: #a09abc;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar__link:active {
+  text-decoration: none;
+  font-size: var(--title);
 }
 .nav-ul {
-	list-style-type: none;
-	display: flex;
-
+  list-style-type: none;
+  display: flex;
 }
-.nav-li{
-	display: inline;
-	padding: 20px;
+.nav-li {
+  display: inline;
+  padding: 20px;
 }
-
+/* styling */
 /* 
 main
 h2
@@ -57,52 +75,81 @@ a*/
 #E1DEE9 Lavender(web)lighter
 #D4BEBE pale dogwood */
 
-h2{
-    text-align: center;
-    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 35px;
+h2 {
+padding-top: var(--paddingtop);
+  padding-bottom: var(--paddingbottom);
+  text-align: center;
+  font-family: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: var(--h2);
 }
-h3{
-    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
-.facility-content{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 300px;
-    padding: 20px;
-    width: 900px;
-    border: 5px solid #D4BEBE;
-    border-radius: 20px;
+h3 {
+  font-family: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: var(--title);
 }
 
-figure{
-    display: flex;
-    flex-direction: row;
-
+.facility-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 300px;
+  padding: 20px;
+  width: 900px;
+  border: 5px solid #d4bebe;
+  border-radius: 20px;
+  background-color: #d5cfe1;
 }
 
-figcaption{
-    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    padding-left: 20px;
-    align-self: center
-    }
-p{
-    font-family: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+figure {
+  display: flex;
+  flex-direction: row;
+}
+.set-label {
+  display: block;
+  font-weight: bold;
+  font-size: var(--standardfont);
+}
+
+figcaption {
+  flex-direction: column;
+  font-family: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: var(--standardfont);
+  padding-left: 20px;
+  align-self: center;
+}
+
+p {
+  font-family: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: var(--standardfont);
+}
+
+.gallery-link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #8262aa;
+}
+.gallery-link:hover {
+  font-weight: 700;
+  text-decoration: none;
+  color: #8262aa;
+  font-size: var(--hover);
+  transition: 0, 3s;
+}
+
+@font-face {
+  font-family: Lorinda shadow;
+  src: url(./Fonts/LondrinaShadow-Regular.ttf);
+}
+
+@font-face {
+  font-family: Zain;
+  src: url(./Fonts/Zain-Regular.ttf);
 }
 @font-face {
-	font-family: Lorinda shadow;
-	src: url(./Fonts/LondrinaShadow-Regular.ttf);
-}
-
-@font-face {
-	font-family: Zain;
-	src: url(./Fonts/Zain-Regular.ttf);
-}
-@font-face {
-	font-family: Outfit;
-	src: url(../Fonts/static/Outfit-Regular.ttf);
+  font-family: Outfit;
+  src: url(../Fonts/static/Outfit-Regular.ttf);
 }
