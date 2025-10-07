@@ -96,7 +96,12 @@ a*/
 #D5CFE1 Lavender(Web)
 #E1DEE9 Lavender(web)lighter
 #D4BEBE pale dogwood */
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 h2 {
   padding-top: var(--paddingtop);
   padding-bottom: var(--paddingbottom);
@@ -113,7 +118,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-left: 300px;
   padding: 20px;
   width: 900px;
   border: var(--border);
