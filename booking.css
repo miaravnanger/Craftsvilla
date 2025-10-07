@@ -1,3 +1,10 @@
+/* Colorpallette:
+#A09ABC Cool gray
+#B6A6CA lilac
+#D5CFE1 Lavender(Web)
+#E1DEE9 Lavender(web)lighter
+#D4BEBE pale dogwood */
+
 /* basic styling for all sections */
 
 :root {
@@ -69,6 +76,7 @@ header {
   display: inline;
   padding: 20px;
 }
+
 @font-face {
   font-family: Lorinda shadow;
   src: url(./Fonts/LondrinaShadow-Regular.ttf);
@@ -82,35 +90,78 @@ header {
   font-family: Outfit;
   src: url(../Fonts/static/Outfit-Regular.ttf);
 }
-/* styling gallery
- */
-
-main {
-  text-align: center;
+/* styling booking
+div booking-content
+h2
+div calendar
+iframe
+div booking-form
+*/
+h2{
+    font-family: var(--fontfamily);
+    font-size: var(--h2);
+    padding-top: var(--paddingtop);
+    padding-bottom: var(--paddingbottom);
+    text-align: center;
 }
-h2 {
-  font-family: var(--fontfamily);
-  font-size: var(--h2);
-  padding-top: var(--paddingtop);
-  padding-bottom: var(--paddingbottom);
+.booking-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.gallery-content {
+.booking-content {
+    width: 1200px;
+    border: var(--border);
+    border-radius: var(--borderradius);
   display: flex;
-  width: 1200px;
+  flex-direction: row;
+  margin-bottom: 15px;
   padding: 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 25px 25px;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  border: var(--border);
-  border-radius: var(--borderradius);
+  gap: 15px;
+}
+.calendar {
+ text-align: center;
+  padding-top: 20px;
+  background-color: var(--backgroundcolor);
+  font-family: var(--fontfamily);
+  font-size: var(--standardfont);
+}
+iframe{
+    padding-top: 20px;
+}
+.booking-form {
+    width: 400px;
+ padding-top: 20px;
+  background-color: var(--backgroundcolor);
+  font-family: var(--fontfamily);
+  font-size: var(--standardfont);
+}
+.booking-form-right {
+    padding-top: 60px;
+  background-color: var(--backgroundcolor);
+  font-family: var(--fontfamily);
+  font-size: var(--standardfont); 
+}
+.field {
+    width: 400px;
+}
+input{
+    background-color: #D4BEBE;
+    height: 40px;
+    border: 0px;
+    padding-left: 20px;
+    font-family: var(--fontfamily);
+    font-size: 20px;
 }
 
-img {
-  width: 300px;
-  height: auto;
+#submit{
+padding: 2px;
+height: 40px;
+width: 100px;
+}
+#comment{
+    width: 300px;
+    height:250px;
+     font-family: var(--fontfamily);
+    font-size: 20px;
 }

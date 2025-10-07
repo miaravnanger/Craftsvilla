@@ -1,17 +1,18 @@
 /* basic styling for all sections */
 
-:root{
-  --fontfamily: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
---standardfont: 25px;
---hover: 26px;
---title: 29px;
---titlehover: 30px;
---h2: 35px;
+:root {
+  --fontfamily: Zain, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --standardfont: 25px;
+  --hover: 26px;
+  --title: 29px;
+  --titlehover: 30px;
+  --h2: 35px;
   --paddingtop: 40px;
   --paddingbottom: 20px;
   --border: 5px solid #d4bebe;
-    --borderradius: 20px;
-    --backgroundcolor: #e9e7ee;
+  --borderradius: 20px;
+  --backgroundcolor: #e9e7ee;
 }
 * {
   margin: 0;
@@ -54,12 +55,11 @@ header {
 }
 .navbar__link:active {
   text-decoration: none;
-      color: #8262aa;
-  font-size: var(--title);
+  color: #8262aa;
 }
-.navbar__link:hover{
-    text-decoration: none;
-    color: #8262aa;
+.navbar__link:hover {
+  text-decoration: none;
+  color: #8262aa;
 }
 .nav-ul {
   list-style-type: none;
@@ -98,11 +98,11 @@ a*/
 #D5CFE1 Lavender(Web)
 #E1DEE9 Lavender(web)lighter
 #D4BEBE pale dogwood */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h2 {
   padding-top: var(--paddingtop);
@@ -121,7 +121,7 @@ h3 {
   flex-direction: column;
   gap: 30px;
   padding: 20px;
-  width: 900px;
+  width: 1200px;
   border: var(--border);
   border-radius: var(--borderradius);
   background-color: #d5cfe1;

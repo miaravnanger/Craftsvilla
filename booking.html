@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craftsvilla</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html" class="title-link">Craftsvilla</a></h1>
+    </header>
+    <div class="nav-bar">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="./index.html" class="navbar__link">
+            <span class="material-icons">cottage</span>Home</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="./booking.html" class="navbar__link">
+            <span class="material-icons">calendar_month</span>Booking</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="./gallery.html" class="navbar__link">
+            <span class="material-icons">burst_mode</span>Gallery</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="./facilities.html" class="navbar__link">
+            <span class="material-icons">color_lens</span>Facilities</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href=".feedback.html" class="navbar__link">
+            <span class="material-icons">reviews</span>Feedback</a
+          >
+        </li>
+      </ul>
+    </div>
+    <main>
+			        <h2>Booking</h2>
+							<div class="booking-frame">
+      <div class="booking-content">
+        <div class="calendar">
+					<h3>Choose an available timeframe</h3>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=795d9a94bcebbac749680260ea342c39c00c7e3d191f81d2924e661da84ecbf9%40group.calendar.google.com&ctz=Europe%2FOslo"
+            style="border: 0"
+            width="400"
+            height="500"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+				<br>
+        <div class="booking-form">
+          <h3>Leave your information here</h3>
+          <form action="book">
+            <label for="Name">Name</label>
+            <br />
+            <input type="text" class="field" placeholder="Name" />
+            <br />
+						<br>
+            <label for="phone">Phone</label>
+            <br>
+            <input
+              type="tel"
+              class="field"
+              placeholder="Phone number"
+              pattern="[0-9]{8}"
+              required
+            />
+            <br />
+						<br>
+            <label for="email">E-mail</label>
+						<br>
+            <input type="email" class="field" placeholder="Email address" />
+            <br />
+						<br>
+            <label for="facilities">Facilities</label>
+						<br>
+            <input
+              type="checkbox"
+              id="mosaic-art"
+              name="mosaic-art"
+              value="mosaic-art"
+            />
+            <label for="mosaic-art">Mosaic art</label>
+            <input
+              type="checkbox"
+              id="Watercolor-painting"
+              name="Watercolor-painting"
+              value="Watercolor-painting"
+            />
+            <label for="watercolor-painting">Watercolor painting</label>
+						<br>
+            <input
+              type="checkbox"
+              id="Canvas-painting"
+              name="Canvas-painting"
+              value="Canvas-painting"
+            />
+            <label for="Canvas-painting">Canvas painting</label>
+            <input
+              type="checkbox"
+              id="Clay-creations"
+              name="Clay-creations"
+              value="Clay-creations"
+            />
+            <label for="Clay-creations">Clay creations</label>
+						<br>
+            <input
+              type="checkbox"
+              id="Jewelry-making"
+              name="Jewelry-making"
+              value="Jewelry-making"
+            />
+            <label for="Jewelry-making">Jewelry making</label>
+            <input
+              type="checkbox"
+              id="Crochet&Knitting"
+              name="Crochet&Knitting"
+              value="Crochet&Knitting"
+            />
+            <label for="Crochet&Knitting">Crochet & Knitting</label>
+						<br>
+            <input
+              type="checkbox"
+              id="Freestyle"
+              name="Freestyle"
+              value="Freestyle"
+            />
+            <label for="Freestyle">Freestyle(choose materials upon arrival)</label>
+            <br />
+						<br>
+        </div>
+				<div class="booking-form-right">
+						<label for="amount">Number of attendants</label>
+						<br>
+            <input list="amount" class="amount" placeholder="People" />
+            <datalist id="amount">
+              <option value="1 person"></option>
+              <option value="2 people"></option>
+              <option value="3 people"></option>
+              <option value="4 people"></option>
+              <option value="4 + people"></option>
+              <option value="Max people(10)"></option>
+            </datalist>
+          </form>
+					<br>
+					<br>
+					<label for="comment">Comments and spesifications</label>
+					<br>
+					<textarea name="comment" id="comment" placeholder="comments/specifications/special needs"></textarea>
+					<br>
+					<br>
+					<input type="submit" id="submit" value="Submit">
+				</div>
+      </div>
+			</div>
+    </main>
+  </body>
+</html>
