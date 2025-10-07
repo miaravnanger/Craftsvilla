@@ -1,24 +1,25 @@
-/* general styling throughout all sections */
-:root {
-      --fontfamily: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --standardfont: 25px;
-  --hover: 26px;
-  --title: 29px;
-  --titlehover: 30px;
-  --h2: 35px;
+/* basic styling for all sections */
+
+:root{
+  --fontfamily: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+--standardfont: 25px;
+--hover: 26px;
+--title: 29px;
+--titlehover: 30px;
+--h2: 35px;
   --paddingtop: 40px;
   --paddingbottom: 20px;
   --border: 5px solid #d4bebe;
-  --borderradius: 20px;
+    --borderradius: 20px;
+    --backgroundcolor: #e9e7ee;
 }
-
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #e1dee9;
+  background-color: var(--backgroundcolor);
 }
 
 header {
@@ -27,12 +28,12 @@ header {
   font-family: Lorinda Shadow, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
-  color: #000000;
 }
 .title-link {
   text-decoration: none;
   color: #000000;
 }
+
 .nav-bar {
   height: 45px;
   background-color: #a09abc;
@@ -68,6 +69,7 @@ header {
   display: inline;
   padding: 20px;
 }
+
 @font-face {
   font-family: Lorinda shadow;
   src: url(./Fonts/LondrinaShadow-Regular.ttf);

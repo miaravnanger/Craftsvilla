@@ -13,8 +13,8 @@ Colorpallette:
 #D4BEBE pale dogwood
 
 
+/* basic styling for all sections */
 
- */
 :root{
   --fontfamily: Zain, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 --standardfont: 25px;
@@ -26,6 +26,7 @@ Colorpallette:
   --paddingbottom: 20px;
   --border: 5px solid #d4bebe;
     --borderradius: 20px;
+    --backgroundcolor: #e9e7ee;
 }
 * {
   margin: 0;
@@ -33,7 +34,7 @@ Colorpallette:
 }
 
 body {
-  background-color: #e1dee9;
+  background-color: var(--backgroundcolor);
 }
 
 header {
@@ -83,6 +84,8 @@ header {
   display: inline;
   padding: 20px;
 }
+
+/* home-styling */
 .homepage {
   display: flex;
   align-items: flex-start;
@@ -112,7 +115,7 @@ h2{
   border-radius: var(--borderradius);
   max-width: 260px;
   min-height: 600px;
-  background-color: whitesmoke;
+  background-color: #E1DEE9;
   text-align: center;
   font-family: var(--fontfamily);
  
