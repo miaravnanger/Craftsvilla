@@ -35,7 +35,9 @@ header {
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 150px;
+  min-height: 155px;
+  padding-top: 20px;
+  width: 100%;
   font-family: Lorinda Shadow, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
@@ -46,7 +48,7 @@ header {
 }
 
 .nav-bar {
-  height: 45px;
+  height: 50px;
   background-color: #a09abc;
   width: 100%;
   font-size: 25px;
@@ -94,11 +96,17 @@ header {
   src: url(../Fonts/static/Outfit-Regular.ttf);
 }
 /* styling booking
-div booking-content
+.booking-frame
+.booking-content
 h2
-div calendar
+.calendar
 iframe
-div booking-form
+.booking-form
+.booking-form-right
+.field
+input
+#submit
+#comment
 */
 h2{
     font-family: var(--fontfamily);
@@ -168,4 +176,3 @@ width: 100px;
      font-family: var(--fontfamily);
     font-size: 20px;
 }
-
