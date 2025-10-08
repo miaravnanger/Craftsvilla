@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craftsvilla</title>
+    <link rel="stylesheet" href="feedback.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="title-link">Craftsvilla</a></h1>
+    </header>
+    <div class="nav-bar">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="index.html" class="navbar__link">
+            <span class="material-icons">cottage</span>Home</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="booking.html" class="navbar__link">
+            <span class="material-icons">calendar_month</span>Booking</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="gallery.html" class="navbar__link">
+            <span class="material-icons">burst_mode</span>Gallery</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="facilities.html" class="navbar__link">
+            <span class="material-icons">color_lens</span>Facilities</a
+          >
+        </li>
+        <li class="nav-li">
+          <a href="feedback.html" class="navbar__link">
+            <span class="material-icons">reviews</span>Feedback</a
+          >
+        </li>
+      </ul>
+    </div>
+    <main>
+      <h2>Feedback</h2>
+      <div class="feedback-frame">
+				<div class="feedback-border">
+        <div class="reviews">
+					<h3>See what previous attendants have said</h3>
+            <div class="review">
+                <img src="./Reviews/Amelia.jpg" alt="A woman sitting on a couch, looking away from the camera and smiling">
+								<p><span class="feedback-title">Such a relaxing experience!</span> <span>I went to Craftsvilla with a few friends on a rainy Sunday, and it was honestly the highlight of my week. We tried mosaic art for the first time, and the staff were so kind and patient. Time flew by, and I left feeling calm and inspired. -Amelia, 29 </span></p></div>
+            <div class="review">
+                <img src="./Reviews/Jonas.jpg" alt="A curly haired man with glasses and a colorful printed shirt, smiling to the camera">
+								<p><span class="feedback-title">Perfect for a mindful break</span> <span>I booked the watercolor painting session during a stressful week at work, and it was exactly what I needed. The space is quiet and beautifully organized. I even framed my painting when I got home! -Jonas, 34</span></p></div>
+								<div class="review">
+                <img src="./Reviews/Lina.jpg" alt="A curly haired woman with a striped jacket smiling to the camera">
+								<p><span class="feedback-title">Fun for all ages</span> <span>I brought my 8-year-old daughter for a clay workshop. She made a small pot and was so proud of it! It's rare to find something that both of us enjoy equally. We'll definitely be back to try jewelry making next time. -Lina, 37</span></p></div>
+								<div class="review">
+                <img src="./Reviews/Eirik.jpg" alt="A man with glasses and a suit, looking confidently into the camera">
+								<p><span class="feedback-title">Beautiful atmosphere and friendly people</span> <span>I'm not usually a "craft person", but I felt so welcome here. The staff really encourage creativity without pressure. I loved just sitting quietly, shaping clay and chatting over tea. -Eirik, 42</span></p></div>
+								<div class="review">
+                         <img src="./Reviews/Mari.jpg" alt="A young woman  in a mauve coloured hijab, looking away from the camera while holding a computer">
+								<p><span class="feedback-title">Loved the knitting corner!</span> <span>The crochet and knitting setup is cozy and well-equipped. Perfect for a rainy afternoon. It's also nice that you can bring extra material home and pay accordingly. -Mari, 25</span></p></div>
+								<div class="review">
+                         <img src="./Reviews/Thomas.jpg" alt="a young man with glasses and a green t-shirt, smiling and looking away from the camera">
+								<p><span class="feedback-title">Peaceful and inspiring</span> <span>Craftsvilla has such a warm and gentle atmosphere. You can come alone or with friends, and there's always something new to try. It's more than just a craft space — it's a little creative escape. -Thomas, 31</span></p></div>
+        </div>
+				<div class="feedback-form">
+					 <h3>Tell us about you experience</h3>
+          <form action="book">
+            <label for="Name">Name</label>
+            <br />
+            <input type="text" class="field" placeholder="Name" />
+            <br />
+						<br>
+            <label for="phone">Phone</label>
+            <br>
+            <input
+              type="tel"
+              class="field"
+              placeholder="Phone number"
+              pattern="[0-9]{8}"
+              required
+            />
+            <br />
+						<br>
+            <label for="email">E-mail</label>
+						<br>
+            <input type="email" class="field" placeholder="Email address" />
+						<br>
+					<br>
+					<label for="feedback">feedback</label>
+					<br>
+					<textarea name="feedback" id="feedback" placeholder="Leave your review here"></textarea>
+					<br>
+					<br>
+					<input type="submit" id="submit" value="Submit">
+					</form>
+				</div>
+				</div>
+      </div>
+    </main>
+  </body>
+</html>

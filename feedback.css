@@ -1,9 +1,3 @@
-/* Colorpallette:
-#A09ABC Cool gray
-#B6A6CA lilac
-#D5CFE1 Lavender(Web)
-#E1DEE9 Lavender(web)lighter
-#D4BEBE pale dogwood */
 
 /* basic styling for all sections */
 
@@ -90,13 +84,29 @@ header {
   font-family: Outfit;
   src: url(../Fonts/static/Outfit-Regular.ttf);
 }
-/* styling booking
-div booking-content
-h2
-div calendar
-iframe
-div booking-form
+/* feedback-styling
+Colorpallette:
+#A09ABC Cool gray
+#B6A6CA lilac
+#D5CFE1 Lavender(Web)
+#E1DEE9 Lavender(web)lighter
+#D4BEBE pale dogwood 
+
+H2,
+.feedback-frame
+.feedback-content
+.reviews
+figure
+img
+figcaption,
+.feedback-form
+.field
+input
+#feedback
+#submit
+
 */
+
 h2{
     font-family: var(--fontfamily);
     font-size: var(--h2);
@@ -104,44 +114,73 @@ h2{
     padding-bottom: var(--paddingbottom);
     text-align: center;
 }
-.booking-frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feedback-frame{
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.booking-content {
+
+.feedback-border{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--title);
+    font-family: var(--fontfamily);
     width: 1200px;
     border: var(--border);
     border-radius: var(--borderradius);
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 15px;
-  padding: 20px;
-  gap: 15px;
 }
-.calendar {
- text-align: center;
-  padding-top: 20px;
-  background-color: var(--backgroundcolor);
-  font-family: var(--fontfamily);
-  font-size: var(--standardfont);
+h3{
+    padding-bottom: 20px;
 }
-iframe{
-    padding-top: 20px;
-}
-.booking-form {
-    width: 400px;
+.reviews{
+width: 700px;
+justify-content: center;
+align-items: center;
+text-align: center;
  padding-top: 20px;
   background-color: var(--backgroundcolor);
   font-family: var(--fontfamily);
   font-size: var(--standardfont);
 }
-.booking-form-right {
-    padding-top: 60px;
+.review{
+    width: 650px;
+    border: var(--border);
+    border-radius: var(--borderradius);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 18px;
+    background-color: #d5cfe1;;
+
+}
+
+p {
+    margin: 20px;
+    text-align: start;
+  font-family: var(--fontfamily);
+  font-size: 20px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+
+}
+.feedback-title{
+    display: block;
+    font-weight: bold;
+    font-size: var(--standardfont);
+}
+.feedback-form{
+    width: 400px;
+     padding-top: 20px;
   background-color: var(--backgroundcolor);
   font-family: var(--fontfamily);
-  font-size: var(--standardfont); 
+  font-size: var(--standardfont);
 }
+
 .field {
     width: 400px;
 }
@@ -159,10 +198,9 @@ padding: 2px;
 height: 40px;
 width: 100px;
 }
-#comment{
-    width: 300px;
-    height:250px;
+#feedback{
+    width: 400px;
+    height:200px;
      font-family: var(--fontfamily);
     font-size: 20px;
 }
-
